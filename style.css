@@ -1,0 +1,70 @@
+/* Исходные стили для ссылки */
+a {
+  color: blue; /* Начальный цвет текста */
+  text-decoration: none;
+  transition: color 0.4s ease; /* Плавный переход цвета за 0.4 секунды */
+}
+
+/* Стили при наведении курсора */
+a:hover {
+  color: red; /* Цвет при наведении */
+}
+
+.image-left {
+  float: left;
+  margin-right: 15px; /*   */
+}
+
+/* Стиль по умолчанию для больших экранов */
+.container {
+  display: flex; 
+  flex-direction: row; 
+}
+
+/* Медиазапрос для мобильных устройств (например, при ширине экрана меньше 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /*  */
+  }
+}
+body {
+  font-family: "Arial", sans-serif; /* . */
+}
+
+/* Стили по умолчанию (для самого маленького экрана, от 360px и ниже) */
+body {
+  font-size: 16px;
+}
+
+/* Стили для экранов от 768px и выше */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Стили для экранов от 1200px и выше */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+/* Стили для экранов до 1920px (например, для экранов с разрешением ниже 1920px) */
+@media screen and (max-width: 1919px) {
+  /* Здесь можно добавить специфичные стили */
+}
+
+/* Стили для экранов от 1920px и выше */
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1200px; /* Фиксированная ширина для больших экранов */
+  }
+}
